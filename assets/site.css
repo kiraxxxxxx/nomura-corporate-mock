@@ -228,6 +228,7 @@ body.static .hero__sl img:first-child{opacity:1;transform:none}
 .tbl dd{font-size:15px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 .duo{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+.duo3{grid-template-columns:repeat(3,1fr)}
 .box{background:#fff;border:1px solid var(--line);padding:34px 32px}
 .sec--gray .box{border-color:transparent}
 .box h3{font:500 20px/1.6 var(--serif);letter-spacing:.1em}
@@ -362,7 +363,7 @@ body.static .hero__sl img:first-child{opacity:1;transform:none}
   .ph-head{padding-top:44px}.crumb{margin-bottom:26px}
   .ph-vis{margin-top:40px;height:64vw}
   .tbl div{grid-template-columns:1fr;gap:4px;padding:16px 2px}
-  .duo,.bases,.jobs,.train{grid-template-columns:1fr}
+  .duo,.duo3,.bases,.jobs,.train{grid-template-columns:1fr}
   .train li{border-left:0;border-top:1px solid var(--line)}.train li:first-child{border-top:0}
   .flow li{grid-template-columns:1fr;gap:14px;padding:28px 0}
   .flow em b{display:inline;font-size:28px;margin-left:10px}
