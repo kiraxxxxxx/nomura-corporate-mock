@@ -161,6 +161,7 @@ body.static .hero__sl img:first-child{opacity:1;transform:none}
 .sub-brand p{font-size:13px;color:var(--ink2)}
 /* shops */
 .shops{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.shops--2{grid-template-columns:1fr 1fr}
 .shop{display:flex;flex-direction:column;border:1px solid var(--line);padding:30px 28px;min-height:250px;transition:.2s;background:#fff}
 .shop:hover{border-color:var(--ink)}
 .shop__lg{height:54px;width:auto;object-fit:contain;object-position:left center}
