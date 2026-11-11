@@ -26,6 +26,8 @@ body.check .chk{display:inline-block;background:#FFE14D;color:#111;font:500 11px
 .hd__in{height:var(--hd);display:flex;align-items:center;gap:28px}
 .logo{display:flex;align-items:center;gap:13px;line-height:1.1;flex:0 0 auto}
 .logo__mk{display:block;width:auto;height:46px}
+.logo__wm{display:block;width:auto;height:30px}
+.ft .logo__wm{height:34px}
 .logo__tx{display:flex;flex-direction:column}
 .logo b{font:600 23px/1.1 var(--serif);letter-spacing:.18em}
 .logo small{font-size:9px;letter-spacing:.28em;color:var(--mute);margin-top:6px}
@@ -347,7 +349,7 @@ body.static .hero__sl img:first-child{opacity:1;transform:none}
   body{font-size:14px}
   .gnav,.hd__act{display:none}
   .menu{display:block}
-  .logo b{font-size:19px}.logo small{font-size:8px}.logo__mk{height:38px}.logo{gap:10px}
+  .logo b{font-size:19px}.logo small{font-size:8px}.logo__mk{height:38px}.logo__wm{height:24px}.ft .logo__wm{height:28px}.logo{gap:10px}
   .spnav{display:block;position:fixed;inset:var(--hd) 0 0 0;background:#fff;z-index:49;padding:24px var(--g) 40px;overflow:auto;opacity:0;pointer-events:none;transition:.3s}
   body.menu-open .spnav{opacity:1;pointer-events:auto}
   .spnav a{display:flex;justify-content:space-between;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line);font:500 17px/1.4 var(--serif);letter-spacing:.1em}
