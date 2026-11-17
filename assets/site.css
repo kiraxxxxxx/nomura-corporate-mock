@@ -437,3 +437,37 @@ body.static .hero__sl img:first-child{opacity:1;transform:none}
 /* 2026-11-16 採用：各パート随時受付 */
 .job__st{margin-top:auto;padding-top:18px;font-size:12px;letter-spacing:.2em;color:var(--ink);border-top:1px solid var(--line)}
 .job > p.job__st{margin-top:auto;color:var(--ink)}
+
+/* 2026-11-17 公開用：お知らせ（microCMS） */
+.cms-news{min-height:120px}
+.nlist--cms li a{grid-template-columns:110px 1fr 20px}
+.cms-empty{margin-top:44px;padding:28px 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mute);font-size:14px}
+.cms-more{display:flex;justify-content:center;margin-top:36px}
+.cms-more button{font:500 13px/1 var(--sans);letter-spacing:.12em;border:1px solid var(--ink);background:#fff;padding:15px 34px;cursor:pointer;color:var(--ink)}
+.cms-more button:disabled{opacity:.5;cursor:default}
+.news-detail{max-width:760px}
+.news-detail time{font-size:13px;letter-spacing:.08em;color:var(--mute)}
+.news-detail h2{font:500 26px/1.6 var(--serif);letter-spacing:.06em;margin-top:8px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.news-detail figure{margin-top:28px}
+.news-detail figure img{width:100%;height:auto}
+.news-body{margin-top:28px;font-size:15px;line-height:2}
+.news-body p{margin:0 0 1.4em}
+.news-body img{max-width:100%;height:auto}
+.news-body a{text-decoration:underline}
+.news-back{margin-top:44px}
+/* お問い合わせ：結果の表示 */
+.form-msg{margin:6px 0 0;padding:14px 16px;border:1px solid #B33A3A;color:#8E2B2B;background:#fff;font-size:14px;line-height:1.8}
+.form-done{margin-top:44px;padding:40px 32px;border:1px solid var(--line);background:var(--gray);text-align:center}
+.form-done b{display:block;font:500 20px/1.7 var(--serif);letter-spacing:.06em}
+.form-done p{margin-top:10px;font-size:14px;color:var(--ink2)}
+.form button[disabled]{opacity:.6;cursor:wait}
+/* プライバシーポリシー */
+.policy{max-width:820px}
+.policy h2{font:500 19px/1.6 var(--serif);letter-spacing:.08em;margin-top:44px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.policy h2:first-child{margin-top:0}
+.policy p,.policy li{font-size:15px;line-height:2;color:var(--ink2);margin-top:14px}
+.policy ul{margin-top:8px;padding-left:1.4em;list-style:disc}
+.policy li{margin-top:4px}
+.policy a{text-decoration:underline}
+.policy__date{margin-top:56px !important;text-align:right;font-size:13px !important}
+@media (max-width:760px){.nlist--cms li a{grid-template-columns:1fr 20px}.nlist--cms time{grid-column:1/-1}.news-detail h2{font-size:21px}}

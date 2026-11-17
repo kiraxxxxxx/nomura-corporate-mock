@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nomura Seisakusho｜Leather goods OEM from Tokyo, since 1923</title><meta name="description" content="Leather goods OEM manufacturer in Higashi-Ueno, Tokyo, founded in 1923. Planning, sampling, production and inspection of wallets, card cases, pouches and more."><meta name="robots" content="noindex">
+<title>Nomura Seisakusho｜Leather goods OEM from Tokyo, since 1923</title><link rel="canonical" href="https://www.nomura-leathercraft.com/en.html"><meta property="og:type" content="website"><meta property="og:site_name" content="有限会社 野村製作所"><meta property="og:title" content="Nomura Seisakusho｜Leather goods OEM from Tokyo, since 1923"><meta property="og:description" content="Leather goods OEM manufacturer in Higashi-Ueno, Tokyo, founded in 1923. Planning, sampling, production and inspection of wallets, card cases, pouches and more."><meta property="og:url" content="https://www.nomura-leathercraft.com/en.html"><meta property="og:image" content="https://www.nomura-leathercraft.com/assets/og.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="description" content="Leather goods OEM manufacturer in Higashi-Ueno, Tokyo, founded in 1923. Planning, sampling, production and inspection of wallets, card cases, pouches and more."><meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
@@ -58,18 +58,22 @@
 <section class="sec sec--gray" id="form" style="letter-spacing:.02em"><div class="wrap">
 <p class="lbl">Contact</p><h2 class="h2" style="letter-spacing:.04em">Tell us about your project</h2>
 <p class="lead">Please write in English. We will reply by email.</p>
-<form class="form" onsubmit="return false">
-<div class="row"><label class="t">Company / Brand<em>Required</em></label><div><input type="text"></div></div>
-<div class="row"><label class="t">Your name<em>Required</em></label><div><input type="text"></div></div>
-<div class="row"><label class="t">Email<em>Required</em></label><div><input type="email"></div></div>
-<div class="row"><label class="t">Country<em>Required</em></label><div><input type="text"></div></div>
-<div class="row"><label class="t">Product<em class="opt">Optional</em></label><div><input type="text" placeholder="e.g. wallets, card cases"></div></div>
-<div class="row"><label class="t">Quantity<em class="opt">Optional</em></label><div><input type="text" placeholder="e.g. 500 pieces"></div></div>
-<div class="row"><label class="t">Timeline<em class="opt">Optional</em></label><div><input type="text" placeholder="e.g. Spring 2027"></div></div>
-<div class="row"><label class="t">Message<em>Required</em></label><div><textarea></textarea></div></div>
-<div class="agree"><label><input type="checkbox"> I agree to the <a href="#" style="text-decoration:underline">privacy policy</a></label></div>
+<form class="form" id="contactForm" novalidate data-lang="en">
+<div class="row"><label class="t">Inquiry type<em>Required</em></label><div><select name="type"><option value="OEMに関するお問い合わせ" selected>OEM / production</option><option value="商品に関するお問い合わせ">Our products</option><option value="一般的なお問い合わせ">General inquiry</option><option value="採用に関するお問い合わせ">Careers</option></select></div></div>
+<div class="row"><label class="t">Company / Brand<em>Required</em></label><div><input type="text" name="company" required autocomplete="organization"></div></div>
+<div class="row"><label class="t">Your name<em>Required</em></label><div><input type="text" name="name" required autocomplete="name"></div></div>
+<div class="row"><label class="t">Email<em>Required</em></label><div><input type="email" name="email" required autocomplete="email"></div></div>
+<div class="row"><label class="t">Country<em>Required</em></label><div><input type="text" name="country" required autocomplete="country-name"></div></div>
+<div class="row"><label class="t">Product<em class="opt">Optional</em></label><div><input type="text" name="product" placeholder="e.g. wallets, card cases"></div></div>
+<div class="row"><label class="t">Quantity<em class="opt">Optional</em></label><div><input type="text" name="qty" placeholder="e.g. 500 pieces"></div></div>
+<div class="row"><label class="t">Timeline<em class="opt">Optional</em></label><div><input type="text" name="when" placeholder="e.g. Spring 2027"></div></div>
+<div class="row"><label class="t">Message<em>Required</em></label><div><textarea name="message" required></textarea></div></div>
+<div class="agree"><label><input type="checkbox" name="agree" required> I agree to the <a href="privacy.html" target="_blank" rel="noopener" style="text-decoration:underline" lang="ja">privacy policy</a> (Japanese)</label></div>
+<p class="form-msg" role="alert" hidden></p>
 <div class="send"><button class="btn btn--fill" type="submit" style="min-width:260px;cursor:pointer;font-family:inherit">Send</button></div>
 </form>
+<div class="form-done" tabindex="-1" hidden></div>
+<script src="assets/contact.js" defer></script>
 <p class="note" style="margin-top:30px">Nomura Seisakusho Co., Ltd.　2F Maison Nomura, 1-28-10 Higashi-Ueno, Taito-ku, Tokyo 110-0015, Japan　<a href="index.html" style="text-decoration:underline" lang="ja">日本語サイト</a></p>
 </div></section>
 </main>
@@ -84,7 +88,7 @@
 <div><h4>BUSINESS</h4><a href="work.html">私たちのできること</a><a href="works.html">実績</a><a href="products.html">自社ブランド</a></div>
 <div><h4>CONTACT</h4><a href="contact.html">お問い合わせ</a><a href="en.html" lang="en">English</a><a href="products.html#shops">オンラインショップ</a></div>
 </div></div>
-<div class="ft__bt"><span><a href="#">プライバシーポリシー</a></span><span>© NOMURA SEISAKUSHO CO., LTD.</span></div>
+<div class="ft__bt"><span><a href="privacy.html">プライバシーポリシー</a></span><span>© NOMURA SEISAKUSHO CO., LTD.</span></div>
 </div></footer>
 <script>
 (function(){var q=location.search;if(q.indexOf('check')>-1)document.body.classList.add('check');if(q.indexOf('static')>-1)document.body.classList.add('static');
